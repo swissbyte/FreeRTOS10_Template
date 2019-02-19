@@ -1,0 +1,77 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>FreeRTOS10_Template</Name>
+    <Description>FreeRTOS 10.0.1 for EDUBoard </Description>
+    <ProjectType>CandCPP</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>FreeRTOS10_Template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.jpg</Icon>
+    <PreviewImage>__PreviewImage.jpg</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="FreeRTOS10_Template.cproj" File="FreeRTOS10_Template.cproj" ReplaceParameters="true">
+      <Folder Name="driver" TargetFolderName="driver">
+        <ProjectItem ReplaceParameters="true" TargetFileName="clksys_driver.c">clksys_driver.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="clksys_driver.h">clksys_driver.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="pmic_driver.c">pmic_driver.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="pmic_driver.h">pmic_driver.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="port_driver.c">port_driver.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="port_driver.h">port_driver.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="sleepConfig.h">sleepConfig.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TC_driver.c">TC_driver.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TC_driver.h">TC_driver.h</ProjectItem>
+      </Folder>
+      <Folder Name="FreeRTOS" TargetFolderName="FreeRTOS">
+        <Folder Name="include" TargetFolderName="include">
+          <ProjectItem ReplaceParameters="true" TargetFileName="croutine.h">croutine.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="deprecated_definitions.h">deprecated_definitions.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="event_groups.h">event_groups.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="FreeRTOS.h">FreeRTOS.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="list.h">list.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="message_buffer.h">message_buffer.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="mpu_prototypes.h">mpu_prototypes.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="mpu_wrappers.h">mpu_wrappers.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="portable.h">portable.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="portmacro.h">portmacro.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="projdefs.h">projdefs.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="queue.h">queue.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="semphr.h">semphr.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="stack_macros.h">stack_macros.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="stream_buffer.h">stream_buffer.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="task.h">task.h</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="timers.h">timers.h</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="croutine.c">croutine.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="event_groups.c">event_groups.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="heap_1.c">heap_1.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="list.c">list.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="port.c">port.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="queue.c">queue.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="stream_buffer.c">stream_buffer.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="tasks.c">tasks.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="timers.c">timers.c</ProjectItem>
+      </Folder>
+      <Folder Name="includes" TargetFolderName="includes">
+        <ProjectItem ReplaceParameters="true" TargetFileName="avr_compiler.h">avr_compiler.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="errorHandler.h">errorHandler.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FreeRTOSConfig.h">FreeRTOSConfig.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="init.h">init.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="mem_check.h">mem_check.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NHD0420Driver.h">NHD0420Driver.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="utils.h">utils.h</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="errorHandler.c">errorHandler.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="init.c">init.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="main.c">main.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="mem_check.c">mem_check.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="NHD0420Driver.c">NHD0420Driver.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="utils.c">utils.c</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
